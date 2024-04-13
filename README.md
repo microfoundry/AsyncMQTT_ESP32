@@ -1,15 +1,5 @@
 # AsyncMQTT_ESP32 Library
 
-[![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncMQTT_ESP32.svg?)](https://www.ardu-badge.com/AsyncMQTT_ESP32)
-[![GitHub release](https://img.shields.io/github/release/khoih-prog/AsyncMQTT_ESP32.svg)](https://github.com/khoih-prog/AsyncMQTT_ESP32/releases)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#Contributing)
-[![GitHub issues](https://img.shields.io/github/issues/khoih-prog/AsyncMQTT_ESP32.svg)](http://github.com/khoih-prog/AsyncMQTT_ESP32/issues)
-
-
-<a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Donate to my libraries using BuyMeACoffee" style="height: 50px !important;width: 181px !important;" ></a>
-<a href="https://www.buymeacoffee.com/khoihprog6" title="Donate to my libraries using BuyMeACoffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg?logo=buy-me-a-coffee&logoColor=FFDD00" style="height: 20px !important;width: 200px !important;" ></a>
-
----
 ---
 
 ## Table of Contents
@@ -83,11 +73,11 @@
 ---
 ---
 
-### Why do we need this [AsyncMQTT_ESP32 library](https://github.com/khoih-prog/AsyncMQTT_ESP32)
+### Why do we need this [AsyncMQTT_ESP32 library](https://github.com/microfoundry/AsyncMQTT_ESP32)
 
 #### Features
 
-This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32) is based on and modified from [**Marvin Roger's async-mqtt-client Library**](https://github.com/marvinroger/async-mqtt-client), to provide support to `ESP32/S2/S3/C3` boards using WiFi or `LwIP W5500 / W6100 / ENC28J60 / LAN8720 Ethernet`
+This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32) was an update to keep the library current (in 2024). It's a fork of [**Khoi Hoang's AsyncMQTT_ESP**](https://github.com/khoih-prog/AsyncMQTT_ESP32) is based on and modified from [**Marvin Roger's async-mqtt-client Library**](https://github.com/marvinroger/async-mqtt-client), to provide support to `ESP32/S2/S3/C3` boards using WiFi or `LwIP W5500 / W6100 / ENC28J60 / LAN8720 Ethernet`
 
 #### Why Async is better
 
