@@ -77,7 +77,7 @@
 
 #### Features
 
-This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32) was an update to keep the library current (in 2024). It's a fork of [**Khoi Hoang's AsyncMQTT_ESP**](https://github.com/khoih-prog/AsyncMQTT_ESP32) is based on and modified from [**Marvin Roger's async-mqtt-client Library**](https://github.com/marvinroger/async-mqtt-client), to provide support to `ESP32/S2/S3/C3` boards using WiFi or `LwIP W5500 / W6100 / ENC28J60 / LAN8720 Ethernet`
+This [**AsyncMQTT_ESP32 library**](https://github.com/microfoundry/AsyncMQTT_ESP32) was an update to keep the library current (in 2024). It's a fork of [**Khoi Hoang's AsyncMQTT_ESP**](https://github.com/khoih-prog/AsyncMQTT_ESP32) is based on and modified from [**Marvin Roger's async-mqtt-client Library**](https://github.com/marvinroger/async-mqtt-client), to provide support to `ESP32/S2/S3/C3` boards using WiFi or `LwIP W5500 / W6100 / ENC28J60 / LAN8720 Ethernet`
 
 #### Why Async is better
 
@@ -127,20 +127,20 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
 #### ESP32S3_DEV
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32S3_DEV.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32S3_DEV.png">
 </p>
 
 #### ESP32S2_DEV
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32S2_DEV.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32S2_DEV.png">
 </p> 
 
 
 #### ESP32C3_DEV
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32_C3_DevKitC_02.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32_C3_DevKitC_02.png">
 </p> 
 
 
@@ -151,7 +151,7 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
 `FULL_DUPLEX, 100Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W6100.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W6100.png">
 </p>
 
 
@@ -162,11 +162,11 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
 `FULL_DUPLEX, 100Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W5500.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W5500.png">
 </p>
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W5500_small.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W5500_small.png">
 </p> 
 
 ---
@@ -176,7 +176,7 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
 `FULL_DUPLEX, 10Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ENC28J60.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ENC28J60.png">
 </p>
  
  
@@ -196,7 +196,7 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
  1. [`Arduino IDE 1.8.19+` for Arduino](https://github.com/arduino/Arduino). [![GitHub release](https://img.shields.io/github/release/arduino/Arduino.svg)](https://github.com/arduino/Arduino/releases/latest)
  2. [`ESP32 Core 2.0.6+`](https://github.com/espressif/arduino-esp32) for ESP32-based boards. [![Latest release](https://img.shields.io/github/release/espressif/arduino-esp32.svg)](https://github.com/espressif/arduino-esp32/releases/latest/)
  3. [`AsyncTCP v1.1.1+`](https://github.com/me-no-dev/AsyncTCP) for ESP32. To install manually for Arduno IDE
- 4. [`AsyncTCP_SSL v1.3.1+`](https://github.com/khoih-prog/AsyncTCP_SSL) for ESP32. [![GitHub release](https://img.shields.io/github/release/khoih-prog/AsyncTCP_SSL.svg)](https://github.com/khoih-prog/AsyncTCP_SSL/releases)
+ 4. [`AsyncTCP_SSL v1.3.1+`](https://github.com/microfoundry/AsyncTCP_SSL) for ESP32. [![GitHub release](https://img.shields.io/github/release/khoih-prog/AsyncTCP_SSL.svg)](https://github.com/khoih-prog/AsyncTCP_SSL/releases)
  5. [`WebServer_WT32_ETH01 v1.5.1+`](https://github.com/khoih-prog/WebServer_WT32_ETH01) for ESP32-based WT32_ETH01 using **either ESP32 core v2.0.0+ or v1.0.6-**. [![GitHub release](https://img.shields.io/github/release/khoih-prog/WebServer_WT32_ETH01.svg)](https://github.com/khoih-prog/WebServer_WT32_ETH01/releases)
  6. [`WebServer_ESP32_ENC library v1.5.1+`](https://github.com/khoih-prog/WebServer_ESP32_ENC) if necessary to use ESP32 boards using `LwIP ENC28J60` Ethernet. To install, check [![arduino-library-badge](https://www.ardu-badge.com/badge/WebServer_ESP32_ENC.svg?)](https://www.ardu-badge.com/WebServer_ESP32_ENC)
  7. [`WebServer_ESP32_W5500 library v1.5.2+`](https://github.com/khoih-prog/WebServer_ESP32_W5500) if necessary to use ESP32 boards using `LwIP W5500` Ethernet. To install, check [![arduino-library-badge](https://www.ardu-badge.com/badge/WebServer_ESP32_W5500.svg?)](https://www.ardu-badge.com/WebServer_ESP32_W5500)
@@ -211,8 +211,8 @@ This [**AsyncMQTT_ESP32 library**](https://github.com/khoih-prog/AsyncMQTT_ESP32
 ## Installation
 
 ### Use Arduino Library Manager
-The best and easiest way is to use `Arduino Library Manager`. Search for `AsyncMQTT_ESP32`, then select / install the latest version.
-You can also use this link [![arduino-library-badge](https://www.ardu-badge.com/badge/AsyncMQTT_ESP32.svg?)](https://www.ardu-badge.com/AsyncMQTT_ESP32) for more detailed instructions.
+
+Not available...
 
 ### Manual Install
 
@@ -291,7 +291,7 @@ Please check [API documentation](https://github.com/khoih-prog/AsyncMQTT_ESP32/b
 `FULL_DUPLEX, 100Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W6100.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W6100.png">
 </p>
 
 ---
@@ -302,11 +302,11 @@ Please check [API documentation](https://github.com/khoih-prog/AsyncMQTT_ESP32/b
 `FULL_DUPLEX, 100Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W5500.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W5500.png">
 </p>
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/W5500_small.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/W5500_small.png">
 </p> 
 
 ---
@@ -316,7 +316,7 @@ Please check [API documentation](https://github.com/khoih-prog/AsyncMQTT_ESP32/b
 `FULL_DUPLEX, 10Mbps`
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ENC28J60.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ENC28J60.png">
 </p>
  
  
@@ -326,7 +326,7 @@ Please check [API documentation](https://github.com/khoih-prog/AsyncMQTT_ESP32/b
 
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32S3_DEV.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32S3_DEV.png">
 </p> 
 
 
@@ -354,7 +354,7 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32S2_DEV.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32S2_DEV.png">
 </p> 
 
 
@@ -382,7 +382,7 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 #### ESP32C3_DEV
 
 <p align="center">
-    <img src="https://github.com/khoih-prog/AsyncMQTT_ESP32/raw/main/Images/ESP32_C3_DevKitC_02.png">
+    <img src="https://github.com/microfoundry/AsyncMQTT_ESP32/raw/main/Images/ESP32_C3_DevKitC_02.png">
 </p> 
 
 
@@ -456,13 +456,13 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 
 #### 1. File [FullyFeaturedSSL_ESP32_SC_W5500.ino](examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500.ino)
 
-https://github.com/khoih-prog/AsyncMQTT_ESP32/blob/4a9f8bcdb04e6c0c329bda40896afd4d7d8e31c7/examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500.ino#L14-L283
+https://github.com/microfoundry/AsyncMQTT_ESP32/blob/4a9f8bcdb04e6c0c329bda40896afd4d7d8e31c7/examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500.ino#L14-L283
 
 
 
 #### 2. File [defines.h](examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/defines.h)
 
-https://github.com/khoih-prog/AsyncMQTT_ESP32/blob/4a9f8bcdb04e6c0c329bda40896afd4d7d8e31c7/examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/defines.h#L13-L90
+https://github.com/microfoundry/AsyncMQTT_ESP32/blob/4a9f8bcdb04e6c0c329bda40896afd4d7d8e31c7/examples/ESP32_SC_W5500/FullyFeaturedSSL_ESP32_SC_W5500/defines.h#L13-L90
 
 
 ---
@@ -1116,7 +1116,7 @@ Sometimes, the library will only work if you update the board core to the latest
 
 ### Issues ###
 
-Submit issues to: [AsyncMQTT_ESP32 issues](https://github.com/khoih-prog/AsyncMQTT_ESP32/issues)
+Submit issues to: [AsyncMQTT_ESP32 issues](https://github.com/microfoundry/AsyncMQTT_ESP32/issues)
 
 ---
 ---
@@ -1143,7 +1143,7 @@ Submit issues to: [AsyncMQTT_ESP32 issues](https://github.com/khoih-prog/AsyncMQ
 ### Contributions and Thanks
 
 1. Based on and modified from [**Marvin Roger's async-mqtt-client Library**](https://github.com/marvinroger/async-mqtt-client)
-
+3. Based on and modified from [**Khoi Hoang's AsyncMQTT_ESP32 Library**](https://github.com/khoih-prog/AsyncMQTT_ESP32)
 
 <table>
   <tr>
@@ -1167,8 +1167,9 @@ If you want to contribute to this project:
 ### License
 
 - Many of the credits go to original author [Marvin Roger](https://github.com/marvinroger)
+- And the rest go to [Khoi Hoang](https://github.com/marvinroger)
 
-- The library is licensed under [MIT](https://github.com/khoih-prog/AsyncMQTT_ESP32/blob/main/LICENSE)
+- The library is licensed under [MIT](https://github.com/microfoundry/AsyncMQTT_ESP32/blob/main/LICENSE)
 
 ---
 
@@ -1176,4 +1177,5 @@ If you want to contribute to this project:
 
 1. Copyright (c) 2017- Marvin Roger
 2. Copyright (c) 2022- Khoi Hoang
+2. Copyright (c) 2024- Terry Phillips
 
