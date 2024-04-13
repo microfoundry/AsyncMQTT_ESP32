@@ -7,16 +7,19 @@
 
   1) async-mqtt-client (https://github.com/marvinroger/async-mqtt-client)
   2) AsyncMQTT_Generic (https://github.com/khoih-prog/AsyncMQTT_Generic)
+  3) AsyncMQTT_ESP32   (https://github.com/khoih-prog/AsyncMQTT_ESP32)
 
-  Built by Khoi Hoang https://github.com/khoih-prog/AsyncMQTT_ESP32
-
-  Version: 1.10.0
+  Version: 1.20.0
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.8.0    K Hoang     17/12/2022 Initial coding to port to ESP32 boards using WiFi or LwIP W5500, LAN8720 or ENC28J60
   1.9.0    K Hoang     21/12/2022 Add support to ESP32S2/C3 boards using LwIP W5500 or ENC28J60 Ethernet
   1.10.0   K Hoang     09/01/2023 Add support to ESP32 and ESP32S2/S3/C3 boards using LwIP W6100
+    
+  1.2.0    T Phillips  13/04/2024 Branding/Clean up. 
+                                  Added support for RootCA Cert
+                                  Combined Client/Server ping timer logic
  *****************************************************************************************************************************/
 
 #pragma once
@@ -98,10 +101,18 @@ AsyncMqttClient::AsyncMqttClient()
   _parsingInformation.bufferState = AsyncMqttClientInternals::BufferState::NONE;
 
 #if ASYNC_TCP_SSL_ENABLED
-  _client.onConnect([](void* obj, AsyncSSLClient * c)
-  {
-    (void) c;
-    (static_cast<AsyncMqttClient*>(obj))->_onConnect();
+  // _client.onConnect([](void* obj, AsyncSSLClient * c)
+  // {
+    // (void) c;
+    // (static_cast<AsyncMqttClient*>(obj))->_onConnect();
+  // }, this);
+  
+  _client.onConnect([](void* obj, AsyncSSLClient* c) {
+    AsyncMqttClient* mqttClient = static_cast<AsyncMqttClient*>(obj);
+    if (mqttClient->_rootCa && mqttClient->_rootCaLen > 0) {
+        c->setRootCa(mqttClient->_rootCa, mqttClient->_rootCaLen);
+    }
+    mqttClient->_onConnect();                             
   }, this);
 
   _client.onDisconnect([](void* obj, AsyncSSLClient * c)
@@ -635,17 +646,27 @@ void AsyncMqttClient::_onPoll()
     return;
   }
 
-  // send ping to ensure the server will receive at least one message inside keepalive window
-  if (_state == CONNECTED && _lastPingRequestTime == 0 && (millis() - _lastClientActivity) >= (_keepAlive * 1000 * 0.7))
-  {
-    _sendPing();
-    // send ping to verify if the server is still there (ensure this is not a half connection)
+  // Combined check for the latest activity, either by client or server
+  if (_state == CONNECTED && _lastPingRequestTime == 0) {
+      unsigned long lastActivity = max(_lastClientActivity, _lastServerActivity);
+      if ((millis() - lastActivity) >= (_keepAlive * 1000 * 0.7)) {
+          _sendPing();
+      }
   }
-  else if (_state == CONNECTED && _lastPingRequestTime == 0
-           && (millis() - _lastServerActivity) >= (_keepAlive * 1000 * 0.7))
-  {
-    _sendPing();
-  }
+
+  // // send ping to ensure the server will receive at least one message inside keepalive window
+  // if (_state == CONNECTED && _lastPingRequestTime == 0 && (millis() - _lastClientActivity) >= (_keepAlive * 1000 * 0.7))
+  // {
+    // Serial.println("Cli Act Ping");
+    // _sendPing();
+    // // send ping to verify if the server is still there (ensure this is not a half connection)
+  // }
+  // else if (_state == CONNECTED && _lastPingRequestTime == 0
+           // && (millis() - _lastServerActivity) >= (_keepAlive * 1000 * 0.7))
+  // {
+    // Serial.println("Srv Act Ping");
+    // _sendPing();
+  // }
 
   _handleQueue();
 }
