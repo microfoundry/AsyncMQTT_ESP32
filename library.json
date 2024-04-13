@@ -1,6 +1,6 @@
 {
   "name": "AsyncMQTT_ESP32",
-  "version": "1.10.0",
+  "version": "1.20.0",
   "keywords": "communication, iot, automation, async, async-tcp, async-tcp-ssl, async-mqtt, mqtt, async-mqtt-client, esp32, esp32-s2, esp32-s3, esp32-c3, wt32-eth01, ethernet, w5500, w6100, enc28j60, lan8720, lwip, lwip-ethernet, lwip-enc28j60, lwip-w5500, lwip-w6100, lwip-lan8720",
   "description": "Arduino Library for ESP32/S2/S3/C3 asynchronous MQTT client implementation. This library, ported to support ESP32/S2/S3/C3, WT32_ETH01 (ESP32 + LAN8720), ESP32 using LwIP ENC28J60, W5500, W6100 or LAN8720. Supporting TLS/SSL for MQTTS Client",
   "authors": 
@@ -9,17 +9,20 @@
       "name": "Marvin ROGER",
     	"url": "https://www.marvinroger.fr"
     },
-    {
       "name":  "Khoi Hoang",
       "url":   "https://github.com/khoih-prog",
-      "email": "khoih.prog@gmail.com",
-      "maintainer": true
     }  
+    {
+      "name":  "Terry Phillips",
+      "url":   "https://github.com/microfoundry",
+      "email": "terry.phillips@microfoundry.com",
+      "maintainer": true
+    }    
   ],
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/khoih-prog/AsyncMQTT_ESP32.git"
+    "url": "https://github.com/microfoundry/AsyncMQTT_ESP32.git"
   },
   "dependencies": 
   [
@@ -30,9 +33,9 @@
       "platforms": ["espressif32"]
     },
     {
-      "owner": "khoih-prog",
+      "owner": "microfoundry",
       "name": "AsyncTCP_SSL",
-      "version": ">=1.3.1",
+      "version": ">=1.4.0",
       "platforms": "espressif32"
     },
     {
