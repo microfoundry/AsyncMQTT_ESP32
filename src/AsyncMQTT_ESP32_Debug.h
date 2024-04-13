@@ -17,7 +17,7 @@
   1.9.0    K Hoang     21/12/2022 Add support to ESP32S2/C3 boards using LwIP W5500 or ENC28J60 Ethernet
   1.10.0   K Hoang     09/01/2023 Add support to ESP32 and ESP32S2/S3/C3 boards using LwIP W6100
     
-  1.2.0    T Phillips  13/04/2024 
+  1.2.0    T Phillips  13/04/2024 Branding/Clean up. 
  *****************************************************************************************************************************/
 
 #pragma once
